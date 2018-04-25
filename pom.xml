@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>lv.jbossfuse.course</groupId>
+  <artifactId>fuse-camel-restlet-eap</artifactId>
+  <version>1.0-SNAPSHOT</version>  
+  <packaging>war</packaging>
+
+  <parent>
+    <groupId>lv.jbossfuse.course</groupId>
+    <artifactId>fuse-camel-course</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <name>Fuse on EAP Camel - Spring - Restlet Application</name>
+  
+  <description>Fuse on EAP Camel Example using Spring and Restlet</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.camel</groupId>
+      <artifactId>camel-core</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel</groupId>
+      <artifactId>camel-spring</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel</groupId>
+      <artifactId>camel-cdi</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel</groupId>
+      <artifactId>camel-cxf</artifactId>
+      <scope>provided</scope>
+    </dependency>      
+    <dependency>
+      <groupId>javax.enterprise</groupId>
+      <artifactId>cdi-api</artifactId>
+      <scope>provided</scope>
+    </dependency>    
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>  
+  </dependencies>
+  <build>
+    <finalName>${project.artifactId}</finalName>
+  </build>
+</project>
